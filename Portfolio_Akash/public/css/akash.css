@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color:#fefefe;
+}
+nav a{
+
+    color:#fefefe;
+}
+
+nav span{
+
+    color: #fefefe;
+}
+
+
+nav a:hover{
+
+    color: black;
+
+
+}
+
+footer div a:hover{
+
+    color:black;
+}
+
+/* index blade content*/
+
+
+
