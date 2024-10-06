@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,11 @@ Route::get('/projects', function () {
 Route::get('/about', function () {
     return view('about');
 })->name("about");
+
+Route::get("/projects",[ProjectController::class,'index'])->name("project");
+;
+
+Route::post('/form',[VisitorController::class,'store'])->name('form');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
